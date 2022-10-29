@@ -1,0 +1,67 @@
+\documentclass[letter,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{CJKutf8}
+\usepackage{tabularx}
+\usepackage{array}
+
+%====================
+% File:         resume.tex
+% Modifying author2:       https://github.com/mengisok 
+% Last Updated: Oct 29, 2022
+% Notes:        I edited again on the version of @gobborg      
+%====================
+
+%====================
+% File:         resume.tex
+% Modifying author1:       https://github.com/gobborg 
+% Last Updated: Dec 26, 2021
+% Notes:        I just made it prettier and better suited to
+%               my needs.
+%====================
+
+%====================
+% File:         resume.tex
+% Original author:       https://github.com/TimmyChan 
+%               https://www.linkedin.com/in/timmy-l-chan/
+% Last Updated: Nov 19, 2021
+% Notes:        All formatting is done in TLCresume.sty
+%               No need to touch that file. 
+%               All actual content is in the sections/ folder.
+%====================
+
+\usepackage{TLCresume}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\author{Han Meng} 
+\def\phone{+86 13572963823}
+\def\city{Hefei, China}
+\def\email{hanmengisok@gmail.com}
+% blog edited in _header.tex
+\def\github{mengisok} % github username
+\def\LinkedIn{mengisok} % linkedin.com/in/______
+
+\begin{document}
+\import{sections/}{_header}
+\vspace*{10pt}
+
+\section{Education}
+\import{sections/}{education}
+\vspace*{10pt}
+
+\section{Work Experience}
+\import{sections/}{experience}
+\vspace*{10pt}
+
+\section{Project}
+\vspace*{3pt}
+\import{sections/}{project}
+\vspace*{10pt}
+
+\section{Skills}
+\vspace*{3pt}
+\import{sections/}{skills}
+\vspace*{10pt}
+
+\end{document}
